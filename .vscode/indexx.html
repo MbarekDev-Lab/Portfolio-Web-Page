@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task 2</title>
+    <style>
+        
+        .first-div{
+            font-size: 24px;
+            font-family: Verdana, sans-serif;
+            font-style: italic;
+            text-transform: uppercase;
+        }
+        .first-p{
+            text-decoration: underline;
+            font-size: 20px;
+            letter-spacing: 10px;
+        }
+        .button{
+            
+            text-decoration: none;
+            color: black;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightgrey;
+            padding: 2px 5px;
+        }
+        .button:hover{
+            color:lightgrey;
+            background-color: black;
+            font-weight: bold;
+            padding: 5px 8px;
+        }
+        .main-navigation{
+            list-style-type: none;
+            width: 300px;
+            height: auto;
+            margin: 50px auto;
+        }
+        .main-navigation li{
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .main-navigation li a{
+            text-decoration: none;
+            color: lightgreen;
+            background-color: darkgreen;
+            padding: 5px;
+        }
+        .main-navigation li a:hover{
+            color:darkgreen;
+            background-color: lightgreen;
+        }
+        .th-bg{
+            background-color: lightgreen;
+        }
+        table, td, th{
+            border: 2px solid black;
+            text-align: center;
+            padding: 5px;
+        }
+        .main-table{
+            border-collapse: collapse;
+            width: 300px;
+            height:auto;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="first-div">Here is the first div</div>
+    <p class="first-p">Here is the first paragraph</p>
+    <a class="button" href="">Click me</a>
+    <ul class="main-navigation">
+        <li>
+            <a href="https://www.google.com">First</a>
+        </li>
+        <li>
+            <a href="https://www.google.com">Second</a>
+        </li>
+        <li>
+            <a href="https://www.google.com">Third</a>
+        </li>
+        <li>
+            <a href="https://www.google.com">Fourth</a>
+        </li>
+    </ul>
+    <table class="main-table">
+        <tr>
+            <th class="th-bg">One</th>
+            <th class="th-bg">Two</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>2.</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flexbox</title>
+<styl>
+
+.section-1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+
+}
+.left-side{
+  
+  border: 2px solid black;
+   background-color: blueviolet;
+   flex:1;
+      padding: 1px 1px;
+      margin:5px;
+      text-align: center;
+      border-collapse: collapse;
+
+}
+.middle-side{
+  border: 2px solid black;
+   background-color: blueviolet;
+   flex:1;
+      padding: 1px 1px;
+      margin:5px;
+      text-align: center;
+      border-collapse: collapse;
+}
+.right-side{
+  border: 2px solid #000000;
+   background-color: #c819c2;
+   flex:1;
+      padding: 1px 1px;
+      margin:5px;
+      text-align: center;
+      border-collapse: collapse;
+}
+
+
+.section-2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+
+}
+.second-side{
+  
+  border: 2px solid black;
+   background-color: blueviolet;
+   flex:1;
+      padding: 1px 1px;
+      margin:5px;
+      text-align: center;
+      border-collapse: collapse;
+
+}
+.third-side{
+  border: 2px solid black;
+   background-color: blueviolet;
+   flex:1;
+      padding: 1px 1px;
+      margin:5px;
+      text-align: center;
+      border-collapse: collapse;
+}
+
+
+
+ .section-2{display: flex;
+      justify-content: center;
+      align-items: center;
+      
+
+}
+   .second-side{
+  
+  border: 2px solid black;
+   background-color:rgb(28, 199, 37);
+   flex:1;
+      padding: 1px 1px;
+      margin:5px;
+      text-align: center;
+      border-collapse: collapse;
+
+}
+.third-side{
+  border: 2px solid black;
+   background-color: rgb(43, 226, 43);
+   flex:1;
+      padding: 1px 1px;
+      margin:5px;
+      text-align: center;
+      border-collapse: collapse;
+}
+
+.text-1{text-align:right ;
+
+
+}
+  
+
+
+    
+
+
+</styl>
+</head>
+<body>
+
+  <div class=section-1>
+    <div class="left-side">
+      Ein Element
+    </div>
+    <div class="middle-side">
+      Ein Element
+    </div>
+    <div class="right-side">
+      Ein Element
+    </div>
+  </div>
+
+  <div class="section-2">
+    <div>
+      <div class="second-side">
+        Ein Element
+      </div>
+      <div class="third-side">
+        Ein Element
+      </div>
+  </div>
+  </div>
+
+<div>
+  
+  <img src="hanuta.jpeg" alt="">
+
+  <p class="text-1">Ein Element</p>
+</div>
+    
+  
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task 3</title>
+    <styl>
+        .flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .flex-item-1{
+            flex:1;
+            background-color: lightgrey;
+        }
+        .flex-item-2{
+            flex:2;
+            background-color: red;
+        }
+        .flex-item-3{
+            flex:1;
+            background-color: lightseagreen;
+        }
+        .flex div{
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+        .haribo-sub-flex{
+            width:75%;
+            height: auto;
+        }
+         
+          
+
+
+
+    </styl>
+</head>
+<body>
+   <div class="flex">    <!-- Section 1 Flexbox-->
+        <div class="flex-item-1">  <!-- Section 1 Left Side-->
+            First element
+        </div>
+        <div class="flex-item-2"> <!-- Section 1 Middle Side-->
+            Second Element
+        </div>
+        <div class="flex-item-1"> <!-- Section 1 Right Side-->
+            Third Element
+        </div>
+   </div>
+   <div class="flex"> <!-- Section 2 Flexbox-->
+        <div class="flex-item-1"> <!-- Section 2 Left Side-->
+            Second Row First 
+        </div>
+        <div class="flex-item-1"> <!-- Section 2 Right Side-->
+            Second Row Second 
+        </div>
+   </div>
+   <div class="flex">                       <!-- Section 3 Flexbox-->
+        <div class="flex-item-1">           <!-- Section 3 Left Side-->
+            <div class="flex">              <!-- Section 3 Sub Flexbox of Left Side-->
+                <div class="flex-item-3">   <!-- Sub Section 3 Left Side-->
+                    <img class="haribo-sub-flex" src="https://images-na.ssl-images-amazon.com/images/I/81reLZjIANL._SL1500_.jpg" alt="dci logo"> 
+                </div>
+                <div class="flex-item-3">   <!-- Sub Section 3 Right Side-->
+                    <p>Information</p>  
+                </div>
+            </div>
+        </div>
+        <div class="flex-item-1">           <!-- Section 3 Right Side-->
+            Third Row Right Side Element
+        </div>
+   </div>
+​
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task 3</title>
+    <styl>
+        .flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .flex-item-1{
+            flex:1;
+            background-color: lightgrey;
+        }
+        .flex-item-2{
+            flex:2;
+            background-color: red;
+        }
+        .flex-item-3{
+            flex:1;
+            background-color: lightseagreen;
+        }
+        .flex div{
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+        .haribo-sub-flex{
+            width:75%;
+            height: auto;
+        }
+         /* Media Query for mobile phone*/
+        @media(max-width:480px){
+            .flex{
+                flex-direction:column;
+            }
+            .flex-item-1, .flex-item-2, .flex-item-3{
+                width:100%;
+                background-color: lightblue;
+            }
+            *{
+                font-size: 50px;
+            }
+        }
+        /* Media Query for desktop*/
+        @media(min-width:1024px){
+            .flex{
+                background-color: lime;
+            }
+        }
+​
+    </styl>
+</head>
+<body>
+   <div class="flex">    <!-- Section 1 Flexbox-->
+        <div class="flex-item-1">  <!-- Section 1 Left Side-->
+            First element
+        </div>
+        <div class="flex-item-2"> <!-- Section 1 Middle Side-->
+            Second Element
+        </div>
+        <div class="flex-item-1"> <!-- Section 1 Right Side-->
+            Third Element
+        </div>
+   </div>
+   <div class="flex"> <!-- Section 2 Flexbox-->
+        <div class="flex-item-1"> <!-- Section 2 Left Side-->
+            Second Row First 
+        </div>
+        <div class="flex-item-1"> <!-- Section 2 Right Side-->
+            Second Row Second 
+        </div>
+   </div>
+   <div class="flex">                       <!-- Section 3 Flexbox-->
+        <div class="flex-item-1">           <!-- Section 3 Left Side-->
+            <div class="flex">              <!-- Section 3 Sub Flexbox of Left Side-->
+                <div class="flex-item-3">   <!-- Sub Section 3 Left Side-->
+                    <a href="https://www.haribo.com/de-de">
+                        <img class="haribo-sub-flex" src="https://images-na.ssl-images-amazon.com/images/I/81reLZjIANL._SL1500_.jpg" alt="dci logo"> 
+                    </a>
+                </div>
+                <div class="flex-item-3">   <!-- Sub Section 3 Right Side-->
+                    <p>Information</p>  
+                </div>
+            </div>
+        </div>
+        <div class="flex-item-1">           <!-- Section 3 Right Side-->
+            Third Row Right Side Element
+        </div>
+   </div>
+​
+</body>
+</html>

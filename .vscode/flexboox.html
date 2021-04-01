@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .first-element{
+            flex: 1;
+            background-color: rgb(138, 84, 14);
+
+        }
+        .second-element{
+            flex:2;
+            background-color: blue;
+
+        }
+        .flex div{
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .hanuta.jpeg{
+            width: 70px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+   <div class="flex">    
+        <div class="first-element">  
+            First element
+        </div>
+        <div class="second-element"> 
+            Second Element
+        </div>
+        <div class="first-element"> 
+            Third Element
+        </div>
+   </div>
+   <div class="flex"> 
+        <div class="first-element"> 
+           Right Side
+        </div>
+        <div class="first.element"> 
+            Left Side
+        </div>
+   </div>
+   <div class="flex">                       
+        <div class="first-element">          
+            <div class="flex">              
+                <div class="hanuta-jpeg">  
+                    <img src="hanuta.jpeg" alt="hanuta">
+                </div>
+                <div class="third-element">   
+                    <p>Information</p>  
+                </div>
+            </div>
+        </div>
+        <div class="first-element">           
+             Right Side Element
+        </div>
+   </div>
+​
+</body>
+</html>
+ 
