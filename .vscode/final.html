@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task 3</title>
+    <style>
+        .flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .flex-item-1{
+            flex:1;
+            background-color: lightgrey;
+        }
+        .flex-item-2{
+            flex:2;
+            background-color: red;
+        }
+        .flex-item-3{
+            flex:1;
+            background-color: lightseagreen;
+        }
+        .flex div{
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+        .haribo-sub-flex{
+            width:75%;
+            height: auto;
+        }
+         /* Media Query for mobile phone*/
+        @media(max-width:480px){
+            .flex{
+                flex-direction:column;
+            }
+            .flex-item-1, .flex-item-2, .flex-item-3{
+                width:100%;
+                background-color: lightblue;
+            }
+            *{
+                font-size: 50px;
+            }
+        }
+        /* Media Query for desktop*/
+        @media(min-width:1024px){
+            .flex{
+                background-color: rgb(255, 115, 0);
+            }
+        }
+​
+    </style>
+</head>
+<body>
+   <div class="flex">    <!-- Section 1 Flexbox-->
+        <div class="flex-item-1">  <!-- Section 1 Left Side-->
+            First element
+        </div>
+        <div class="flex-item-2"> <!-- Section 1 Middle Side-->
+            Second Element
+        </div>
+        <div class="flex-item-1"> <!-- Section 1 Right Side-->
+            Third Element
+        </div>
+   </div>
+   <div class="flex"> <!-- Section 2 Flexbox-->
+        <div class="flex-item-1"> <!-- Section 2 Left Side-->
+            Second Row First 
+        </div>
+        <div class="flex-item-1"> <!-- Section 2 Right Side-->
+            Second Row Second 
+        </div>
+   </div>
+   <div class="flex">                       <!-- Section 3 Flexbox-->
+        <div class="flex-item-1">           <!-- Section 3 Left Side-->
+            <div class="flex">              <!-- Section 3 Sub Flexbox of Left Side-->
+                <div class="flex-item-3">   <!-- Sub Section 3 Left Side-->
+                    <a href="https://www.haribo.com/de-de">
+                        <img class="haribo-sub-flex" src="https://images-na.ssl-images-amazon.com/images/I/81reLZjIANL._SL1500_.jpg" alt="dci logo"> 
+                    </a>
+                </div>
+                <div class="flex-item-3">   <!-- Sub Section 3 Right Side-->
+                    <p>Information</p>  
+                </div>
+            </div>
+        </div>
+        <div class="flex-item-1">           <!-- Section 3 Right Side-->
+            Third Row Right Side Element
+        </div>
+   </div>
+​
+</body>
+</html>
